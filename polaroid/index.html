@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS Border Styles</title>
+    <style>
+        .polaroid {
+            background-color: white;
+            padding: 16px;
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+            border-radius: 4px;
+            rotate: -6deg;
+        }
+
+        .polaroid img {
+            margin-bottom: 5px;
+            filter: contrast(160%) brightness(80%) saturate(40%);
+        }
+
+        .polaroid .caption {
+            text-align: center;
+            line-height: 30px;
+            font-size: 24px;
+            font-family: 'Shadows Into Light';
+        }
+    </style>
+</head>
+
+<body>
+    <figure class="polaroid">
+        <img src="https://unsplash.com/photos/P8ERfhQ_mq4/download?force=true&amp;w=360">
+        <div class="caption">The glory days - '98</div>
+    </figure>
+</body>
+
+</html>
