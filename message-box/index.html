@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title>Message Box</title>
+    <style>
+        section {
+            background: white;
+            width: 300px;
+            border: 1px solid #CCC;
+            border-radius: 10px;
+        }
+
+        header {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        div.messages {
+            padding: 10px;
+            height: 200px;
+            flex-direction: column;
+            display: flex;
+            gap: 10px;
+        }
+
+        .msg {
+            background: rgb(230, 230, 230);
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 75%;
+        }
+
+        .msg.theirs {
+            border-bottom-left-radius: 0px;
+        }
+
+        .msg.mine {
+            border-bottom-right-radius: 0px;
+            background: rgb(42, 113, 172);
+            color: white;
+            align-self: flex-end;
+        }
+
+        form {
+            background: rgb(240, 240, 240);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        textarea {
+            padding: 0px;
+            border: none;
+            background-color: transparent;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            background: rgb(42, 113, 172);
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>Messages</header>
+        <div class="messages">
+            <div class="msg theirs">Interested in programming?</div>
+            <div class="msg theirs">Follow @dev.bytes</div>
+            <div class="msg mine">Yes!! Please give me more!</div>
+        </div>
+        <form>
+            <textarea placeholder="Your message..."></textarea>
+            <button>Send</button>
+        </form>
+    </section>
+</body>
+</html>
