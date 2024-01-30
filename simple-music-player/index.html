@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>Simple Music Player</title>
+    <style>
+        .player {
+            background: rgb(19, 74, 100);
+            color: white;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .cover {
+            background: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 5px;
+        }
+
+        .info {
+            display: flex;
+            gap: 10px;
+            width: 50%;
+        }
+
+        .playing {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            justify-content: center;
+        }
+
+        .title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .artist {
+            font-size: 12px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="player">
+        <div class="info">
+            <div class="cover">
+                <img src="assets/logo.png" width="50px">
+            </div>
+            <div class="playing">
+                <div class="title">Song Title</div>
+                <div class="artist">Artist</div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="assets/prev.svg"><img src="assets/pause.svg"><img src="assets/next.svg">
+        </div>
+    </div>
+</body>
+</html>
