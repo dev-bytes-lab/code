@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <title>Weather Screen</title>
+    <style>
+        main {
+            background: url('assets/rainy.png');
+            color: white;
+            width: 275px;
+            height: 450px;
+            padding: 40px;
+            background-size: cover;
+            background-position: center;
+            flex-direction: column;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 60px;
+            border-radius: 25px;
+        }
+
+        .current {
+            font-size: 75px;
+            text-shadow: 0px 0px 10px black;
+        }
+
+        sup {
+            font-size: 0.5em;
+        }
+
+        .days {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .day {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            font-size: 18px;
+            text-shadow: 0px 0px 5px black;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            gap: 5px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="current">
+            <div class="condition">Rainy</div>
+            <div class="temp">
+                <span>56</span><sup>°F</sup>
+            </div>
+        </section>
+        <section class="days">
+            <div class="day">
+                <div>MON</div>
+                <div>
+                    <span>48</span>
+                    <sup>°F</sup>
+                </div>
+            </div>
+            <div class="day">
+                <div>TUE</div>
+                <div>
+                    <span>51</span>
+                    <sup>°F</sup>
+                </div>
+            </div>
+            <div class="day">
+                <div>WED</div>
+                <div>
+                    <span>60</span>
+                    <sup>°F</sup>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
